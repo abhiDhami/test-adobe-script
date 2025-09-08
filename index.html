@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <title>Hello World Page 2</title>
+    <title>Hello World Page 3</title>
     <script>
         function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
         function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
         function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
         function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-        function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+        function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
         function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
         function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
         // For license information, see `https://assets.adobedtm.com/2926360f3839/43c95a22286e/launch-dd6243f5db20-development.js`.
@@ -6624,7 +6624,7 @@
             "use strict";
 
             function e(e) {
-                return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
+                return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e["default"] : e;
             }
             function t(e) {
                 return "[object Object]" === Object.prototype.toString.call(e);
@@ -7046,7 +7046,7 @@
                                             }, l);
                                         });
                                     se.race([r, c]).then(t, i);
-                                }).catch(function (e) {
+                                })["catch"](function (e) {
                                     return clearTimeout(o), e = t(e), i(n, r, e), se.reject(e);
                                 }).then(function () {
                                     clearTimeout(o);
@@ -7068,7 +7068,7 @@
                                             }, r);
                                         });
                                     ce.race([n, o]).then(t, i);
-                                }).catch(function (e) {
+                                })["catch"](function (e) {
                                     return clearTimeout(l), e = t(e), n(a, o, e), ce.reject(e);
                                 }).then(function (e) {
                                     if (clearTimeout(l), !i(a, e)) return r(a, o), ce.reject();
@@ -7085,7 +7085,7 @@
                                 ue = t(e, n, r, ue);
                             }), ue = (ue = ue.then(function () {
                                 i(n);
-                            })).catch(function () { });
+                            }))["catch"](function () { });
                         };
                     },
                     pe = function pe(e) {
@@ -7618,8 +7618,7 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <h1>Hello World3</h1>
 </body>
 
 </html>
-
